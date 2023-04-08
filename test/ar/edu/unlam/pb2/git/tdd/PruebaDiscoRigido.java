@@ -25,13 +25,24 @@ public class PruebaDiscoRigido {
 		//Arrange
 		DiscoRigido unHDD = new DiscoRigido("Seagate",10);
 		Integer cantidadDeDVDEsperada = 2276;
-		
 		//Act
-		Integer cantidadDeDVDObtenida = unHDD.calcularLaCantidadDeDVD();
-				
+		Integer cantidadDeDVDObtenida = unHDD.calcularLaCantidadDeDVD();		
 		//Assert
-		assertEquals(cantidadDeDVDEsperada, cantidadDeDVDObtenida);
-		
+		assertEquals(cantidadDeDVDEsperada, cantidadDeDVDObtenida);	
 	}
+	
+	
+	@Test
+	public void queAlDarUnDiscoRigidoDeMarcaSeagateYDeAlmacenamiento10TBMeDeLaCantidadDeBLUERAYsQueEquivale() {
+		//Arrange
+		DiscoRigido unHDD = new DiscoRigido("Seagate",10);
+		Integer cantidadDeBlueRayEsperada = 683;
+		//Act
+		Integer cantidadDeBlueRayObtenida = unHDD.calcularLaCantidadDeBlueRay();		
+		//Assert
+		assertEquals(cantidadDeBlueRayEsperada, cantidadDeBlueRayObtenida);	
+	}
+	
+	
 
 }

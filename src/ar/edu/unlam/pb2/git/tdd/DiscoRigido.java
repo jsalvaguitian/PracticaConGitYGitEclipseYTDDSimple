@@ -20,6 +20,11 @@ public class DiscoRigido {
 		Integer cantidadDeDVD = (int)Math.ceil(almacenamientoEnTB * this.conversionDeUnidad / this.almacenamientoDeUnDVDEnGB);
 		return cantidadDeDVD;
 	}
+
+	public Integer calcularLaCantidadDeBlueRay() {
+		Integer cantidadDeBlueRay = (int)Math.ceil(this.almacenamientoEnTB * this.conversionDeUnidad / this.almacenamientoDeUnBlueRayEnGB);
+		return cantidadDeBlueRay;
+	}
 	
 	
 
