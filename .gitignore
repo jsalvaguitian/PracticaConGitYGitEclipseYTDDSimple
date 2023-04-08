@@ -1,0 +1,12 @@
+#Un comentario
+
+#Ignoro la carpeta bin
+/bin
+/.settings
+
+#Ignoro archivos
+*.class
+*.log
+*.classpath
+*.project
+
